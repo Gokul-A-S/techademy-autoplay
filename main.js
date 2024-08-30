@@ -10,8 +10,9 @@ function start() {
     if (dclhandler) { document.removeEventListener('DOMContentLoaded', start); }
 
     setTimeout(() => {
-        let video = document.elementFromPoint(900, 400)
-        console.log(video);
+        // let video = document.elementFromPoint(900, 400)
+        let video = document.getElementsByTagName('video')[0];
+        // console.log(video[0]);
         video.play();
         video.currentTime = 10000;
 
